@@ -1,0 +1,77 @@
+/* Styling of the body */
+
+body {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PMeEz_y3ODiMuVPvJxlCRPfi14illRmLeMZqbv2LpgCaYxBo);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Giving Layout to the page using grid */
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: menu;
+}
+
+.item-3 {
+  grid-area: main;
+}
+
+.item-4 {
+  grid-area: right;
+}
+
+.item-5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header header header header'
+    'menu main main main right right' 'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #1a0101;
+}
+
+.grid-container > div {
+  background-image: url(https://www.vector-eps.com/wp-content/gallery/water-drops-on-glass-textures/water-drops-on-glass-texture1.jpg);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* formatting the navbar */
+
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  margin: 93px;
+}
+
+/* formatting the main part that is the paragraph */
+p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px;
+  margin-top: 50px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+.life:hover {
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Grid1</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(to right, #D5EFF0, #2FC8EE);
+            font-family: "Quicksand";
+            text-align: center;
+        }
+
+        .heading {
+            font-family: "Indie Flower";
+            text-align: center;
+            font-size: 5em;
+            color: #0307F3;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            background: linear-gradient(to right, #46ACC0, #179CB9);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            display: grid;
+            font-size: 1.5em;
+            padding: 10px;
+            margin: 20px;
+            color: whitesmoke;
+        }
+
+        li {
+            flex-grow: 1;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1em;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            margin-right: 30px;
+            margin-left: 30px;
+            border: #828A8B 2px solid;
+            padding: 30px;
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(5 1fr);
+            grid-gap: 3em;
+            display: flex;
+            padding: 55px;
+            background: linear-gradient(to right, #46ACC0, #014E61);
+        }
+
+        .nested a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(5 1fr);
+            padding: 50px;
+            font-size: 25px;
+        }
+
+
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: auto;
+        }
+
+        .image :hover {
+            transform: scale(1.1);
+            transition-duration: 0.8s;
+        }
+
+        .center-1:hover {
+            transform: scale(1.1);
+            transition-duration: 0.8s;
+            transition-delay: 0.8s;
+        }
+
+        .wrapper>div {
+            background: linear-gradient(to right, #46ACC0, #014E61);
+            color: whitesmoke;
+            line-height: 1.5em;
+            padding: 1em;
+            font-size: 20px;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background-color: #007C80;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Holiday Places</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">information</a></li>
+                <li><a href="#">Search<i class="fa fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div>
+
+            <figure class="image is-center"><img width="800" height="400" src="http://2.bp.blogspot.com/-NcaBCDcoMYo/U37mgWeWbJI/AAAAAAAAAyU/FC_tNpzszMA/s1600/phi_phi_island_beach.jpg"></figure>
+        </div>
+
+        <div>
+            <h3>Holiday Destinations: Phi Phi Island (Thailand)</h3>
+            <p>As we all know that Thailand is one of the most promising places for tourists who are willing to go there especially
+                for honeymoon holidays. Phi Phi Island is one of the best holiday destinations in Thailand where people throng
+                from all over the world especially in summer season.</p>
+        </div>
+        <div>
+            <figure class="image is-center"><img width="800" height="400" src="http://www.vinum-eu.com/wp-content/uploads/2017/12/Maldives10_CNT_17dec09_b.jpg"></figure>
+        </div>
+        <div>
+            <h3>Burma</h3>
+            <p>Burma is a destination perfect for any time throughout the year but January is the perfect time to go to Burma.
+                In January there is lots of sunshine, little rain and a conducive heat. In January its the perfect time that
+                you get to enjoy Burma’s misty mountains, enjoy life in the tropical islands, and learn and experience the
+                historical temples and pagodas across the land.</p>
+        </div>
+        <div>
+            <figure class="image is-center"><img width="800" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9GOOhUPZVtr-QvNNEEsrCzkZBhdFWxYyIwn3n1oivsNpm6qfG"></figure>
+        </div>
+        <div>
+            <h3>Australia’s Gold Coast</h3>
+            <p>January starts at a very high note in Australia with Sydney been known for throwing the best parties for the
+                New Year’s Day celebration. In January you get to enjoy the beauty of Australia in amazing places such as
+                Byron Bay to Gold Coast, the Great Barrier Reef, Whitsundays and the east coast. January makes Gold Cost
+                the best destination.</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="nested">
+        <div>
+            <figure class="center-1"><img width="250" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLq2R7fPfD4Iuw7QHQSsR8eUkcs2NR4tpmMI4HEX7wQ8LPb9TDDA">
+                <a href="https://www.history.com/topics/taj-mahal">Taj Mahal</a>
+            </figure>
+
+        </div>
+        <div>
+            <figure class="center-1"><img width="250" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OY73JOd_bDkHwN9LDady8pnaDPSFMqD95TCrx7Ed9Dssh3Ua3g">
+                <a href="https://www.nationalparks.org/explore-parks/yellowstone-national-park">Yellowstone National Park</a></figure>
+        </div>
+
+        <div>
+            <figure class="center-1"><img width="250" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KWmvmr7KmQaurE-Dyni0Zjj6WzRfIzRDhBf0jqumdopgogN-">
+                <a href="https://in.musafir.com/Blog/Kashmir_a_Land_of_Unimaginable_Beauty.aspx">Kshmir Resorts</a></figure>
+        </div>
+        <div>
+            <figure class="center-1"><img width="250" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaesfC4SP2Xq4uSV-C4XUwuXgJdJyn92RVTjw3sLSFRI8b4tiN_Q">
+                <a href="https://www.erajasthantourism.net/">Rajasthan</a></figure>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <footer>: all rights reserved:Page created by Shikha Biswas :</footer>
+    </div>
+
+    <br>
+    <br>
+
+
+
+</body>
+
+</html>

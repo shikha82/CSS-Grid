@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
+
+        .container>div {
+            background-color: gray;
+            padding: 1em;
+        }
+
+        .container>div:nth-child(odd) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <figure><img width="500" height="400" src="https://drop.ndtv.com/albums/COOKS/corngallery/creolespicedcornthumb_640x480.jpg"></figure>
+        </div>
+        <div>
+            <figure><img width="500" height="400" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg"></figure>
+        </div>
+        <div>
+            <figure><img width="500" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqeaj3u_NhQ91J07nER0JjwX77OaTb1kj_csStII8E1NSiE2C6yQ"></figure>
+        </div>
+        <div>
+            <figure><img width="500" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9xzO5alrvc2p_5471TzRuWAdndegjzeKlOZ5cBfUHXPdKfuO"></figure>
+        </div>
+        <div>
+            <figure><img width="500" height="400" src="https://pbs.twimg.com/profile_images/750559002166263808/dVrxkvEM_400x400.jpg"></figure>
+        </div>
+        <div>
+            <figure><img width="500" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJudB7r-kqm7so5ehd_gxQ7mCLQu-l3AtNTpTh_ndsq2-5VZAYww"></figure>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
